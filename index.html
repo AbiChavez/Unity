@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="codigo.js" defer></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Valtrix</title>
+</head>
+<body>
+    
+
+    <div>
+        <video autoplay muted loop id="myVideo">
+            <source src="asteroides.mp4" type="video/mp4">
+        </video>
+        <img src="logo.png" alt="logo" id="logo">
+        
+    </div>
+    
+    <section class="seccion" id="estudianteForm" >
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Registrarse</h2>
+                    <table cellspacing="20">
+                        <tr>
+                            <td><div class="inputbox">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <input type="" required>
+                                <label for="">Nombre</label>
+                            </div></td>
+                            <td><div class="inputbox">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <input type="email" required>
+                                <label for="">Email</label>
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="inputbox">
+                                <input class="calendarioNac" type="date" required>
+                                <label for="">Fecha de nacimiento</label>
+                            </div></td>
+                            <td><div class="inputbox">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <input type="password" required>
+                                <label for="">Contraseña</label>
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td><div class="inputbox">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <input type="" required>
+                                <label for="">Sexo</label>
+                            </div></td>
+                            <td><div class="inputbox">
+                                <label for="">País:</label>
+                                <select name="país" id="país" form="paísform">
+                                    <option value="">-País-</option>
+                                    <option value="México">México</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Perú">Perú</option>
+                                    <option value="Argentina">Argentina</option>
+                                </select>
+                            </div></td>
+                        </tr>
+                    </table>
+                    
+                    <button onclick="mostrarTutor();" class="botonCont">Continuar</button>
+                    <div class="register">
+                        <p>Don't have a account <a href="#">Register</a></p>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+    <center>
+        <section class="seccion" id="tutorForm" style="display:none">
+            <div class="tut-form-box">
+                <div class="form-value">
+                    <form action="">
+                        <h2>Registrarse</h2>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="text" required>
+                            <label for="">Nombre del tutor:</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" required>
+                            <label for="">Correo del tutor:</label>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="text" required>
+                            <label for="">Parentesco:</label>
+                        </div>
+                        
+                        <button onclick="mostrarTutor();" class="botonCont">Continuar</button>
+                        <div class="register">
+                            <p>Don't have a account <a href="#">Register</a></p>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+    </center>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
